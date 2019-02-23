@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Feed</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Search My Feed</h1>
+      <p>A filtered search engine for marketers</p>
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Insert Keyword</label>
+          <input
+            class="form-control form-control-lg"
+            type="text"
+            placeholder="enter keyword to find some content"
+            name="keyword"
+            id="keyword"
+          />
+        </div>
+        <input
+          type="button"
+          class="btn btn-primary"
+          onclick="sendForm()"
+          value="Submit"
+        />
+      </form>
+      <div class="container" id="container"></div>
+    </div>
+    <div id="response"></div>
+    <script src="./fetchFeedly.js"></script>
+  </body>
+</html>
